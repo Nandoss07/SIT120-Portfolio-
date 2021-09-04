@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Responsive Design -->
+    <title>W3.CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            /* Font Family  */
+            font-family: Arial, Helvetica, sans-serif, ;
+            background-color: #FFE7D6;
+            margin: 0;
+            padding-top: 20px;
+            padding-right: 40px;
+            padding-bottom: 20px;
+            padding-left: 70px;
+        }
+
+        /* Style Code for Heading 1 */
+        h1 {
+        font-family: "Times New Roman", Times, serif;
+        color: #22221B;
+        }
+  
+        /* Style Code for Heading 2  */
+        h2 {
+        text-transform: uppercase;
+        color: #6B705C;
+        }
+
+        /* Style Code for Heading 3  */
+        h3 {
+        text-transform: uppercase;
+        color: #A5A58D;
+        }
+
+        /* Style Code For paragraph 1  */
+        .p1 {
+        font-family: "Times New Roman", monospace;
+         color: #CB997E;
+}
+        /* Background of the header */
+        .header {
+            overflow: hidden;
+            background-color:#FFF3EB;
+            padding: 20px 10px;
+        }
+
+        /* Style the header links */
+        .header a {
+            float: left;
+            color: #454536;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 25px;
+            border-radius: 4px;
+        }
+
+        /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+        .header a.logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        /* Change the background color on mouse-over */
+        .header a:hover {
+            background-color: #6B705C;
+            color: black;
+        }
+
+        /* Style the active/current link*/
+        .header a.active {
+            background-color: #6B705C;
+            color: #6B705C;
+        }
+
+        /* Float the link section to the right */
+        .header-right {
+            float: right;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #6B705C;
+            color: #ffffff;
+            text-align: center;
+            font-size: 12px;
+            padding: 15px;
+        }
+
+        /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+        @media screen and (max-width: 500px) {
+            .header a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+
+            .header-right {
+                float: none;
+            }
+        }
+    
+    </style>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+
+    <!-- The interactive Header that takes you back to the home page  -->
+    <div class="header">
+        <a href="Code.html" class="logo">Soul Divine</a>
+        <div class="header-right">
+        </div>
+    </div> 
+
+    <!-- Header  -->
+    <div class="w3-container ">
+        <h1>About Us</h1>
+        <p class="p1">A warm welcome to Soul Divine Australia’s only dedicated wellbeing marketplace. We bring it all onto one platform so you can easily book, in real-time, with an expert practitioner, therapist or trainer near you.</p>
+    </div>
+    
+ <!-- Health Section   -->
+    <div class="w3-row-padding">
+        <div class="w3-third">
+            <h2>Health</h2>
+            <h3>What Is Health?</h3>
+            <p class="p1">Health is "a state of complete physical, mental, and social well-being and not merely the absence of disease.</p> 
+        </div>
+
+        <img src=" https://i.pinimg.com/originals/0a/37/a0/0a37a07f55454ee25aae8391f4c7a8e0.jpg " alt="Nature"
+            class="responsive" style="width:100%;">
+    <!-- Wellbeing Section  -->
+    <div class="w3-row-padding">
+        <div class="w3-third">
+            <h2>Wellbeing</h2>
+            <h3>What Is Wellbeing?</h3>
+            <p class="p1"> Wellbeing, also known as wellness, prudential value or quality of life, refers to what is intrinsically valuable relative to someone. So the well-being of a person is what is ultimately good for this person, what is in the self-interest of this person.</p>
+         
+        </div>
+
+        <img src="https://img.thedailybeast.com/image/upload/v1542230904/181114-deopoukos-reiki-tease_cexhiu.jpg" alt="Nature"
+            class="responsive" style="width:100%;">
+
+    <!-- Fitness Section  -->
+
+        <div class="w3-third">
+            <h2>Fitness</h2>
+            <h3>What Is Fitness?</h3>
+            <p class="p1"> Fitness is the condition of being physically fit and healthy and involves attributes that include, but are not limited to mental acuity, cardiorespiratory endurance, muscular strength, muscular endurance, body composition, and flexibility.
+            </p>
+  
+        </div>
+
+        <img src="https://www.fitnessfirst.com.au/static/1702f7a4cb68d57bb7854b794bddb188/39f27/THIS_INTENSE_CORE_WORKOUT_WILL_FIRE_UP_YOUR_MIDDLE_-_thumb.jpg" alt="Nature"
+            class="responsive" style="width:100%;">
+
+        <!-- Organic Treatment Section  -->
+        <div class="w3-third">
+            <h2>Organic Treatment</h2>
+            <h3>What Is Organic Treatment ?</h3>
+            <p class="p1">By using a combination of healthy diet, simple self-help techniques, for example, breathing and relaxation exercises, beneficial herbs and general exercise, naturopathy seeks to promote the body's own ability to heal itself.</p>
+            
+        </div>
+
+        <img src=" https://www.israel21c.org/wp-content/uploads/2019/02/main-pic-8-1168x657.jpg" alt="Nature"
+            class="responsive" style="width:100%;">
+
+            <br>
+
+            
+    </div>
+        <br>
+        <div class="footer">  <!-- Footer -->
+            <p>Take Care Of Your Health & Wellbeing With Soul Divine.</p>
+        </div>
+
+</body>
+
+</html>

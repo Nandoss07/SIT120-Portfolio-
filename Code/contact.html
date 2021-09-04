@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>   /* Style Sheet */
+        body {  /* Font Family  */
+            font-family: Arial, Helvetica, sans-serif, ;
+            background-color: #FFE7D6;
+            margin: 0;
+            padding-top: 50px;
+            padding-right: 30px;
+            padding-bottom: 50px;
+            padding-left: 80px;
+        }
+
+            /* Border */
+        * {
+            box-sizing: border-box;
+        }
+         
+        
+        /* Border Of the contact form boxes */
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #6B705C;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        /* Submit Button */
+        input[type=submit] {
+            background-color: #949A84;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        /* Submit Button when you hover */
+        input[type=submit]:hover {
+            background-color: #B7B7A4;
+        }
+        /* Background of the contact form */
+        .container {
+            border-radius: 5px;
+            background-color:#FFF3EB;
+            padding: 20px;
+        }
+
+        /* Background of the header */
+        .header {
+            overflow: hidden;
+            background-color:#FFF3EB;
+            padding: 20px 10px;
+        }
+
+        /* Style the header links */
+        .header a {
+            float: left;
+            color: #454536;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 25px;
+            border-radius: 4px;
+        }
+
+        /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+        .header a.logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        /* Change the background color on mouse-over */
+        .header a:hover {
+            background-color: #6B705C;
+            color: black;
+        }
+
+        /* Style the active/current link*/
+        .header a.active {
+            background-color: #6B705C;
+            color: #6B705C;
+        }
+
+        /* Float the link section to the right */
+        .header-right {
+            float: right;
+        }
+
+        .footer {
+            background-color: #6B705C;
+            color: #ffffff;
+            text-align: center;
+            font-size: 12px;
+            padding: 15px;
+        }
+
+        /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+        @media screen and (max-width: 500px) {
+            .header a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+
+            .header-right {
+                float: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    
+    <!-- The interactive Header that takes you back to the home page  -->
+    <div class="header">
+        <a href="Code.html" class="logo">Soul Divine</a>
+        <div class="header-right">
+        </div>
+    </div> 
+
+
+    <!-- CONTACT FORM  -->
+
+    <h3>Contact Form</h3>
+
+    <div class="container">
+        <form action="/action_page.php">
+            <label for="fname">First Name</label> <!-- Title of the box  -->
+            <input type="text" id="fname" name="firstname" placeholder="Enter Your Name..">
+
+            <label for="lname">Last Name</label> <!-- Title of the box  -->
+            <input type="text" id="lname" name="lastname" placeholder="Enter Your Last Name..">
+
+            <label for="lname"> Email Address</label> <!-- Title of the box  -->
+            <input type="text" id="lname" name="Email Address" placeholder="Enter Your Email Adress..">
+
+            <!-- Drop Down Menu  -->
+            <label for="country">Your're Contacting Us Regarding </label> <!-- Title of the box  -->
+            <select id="country" name="country">
+                <option value="australia">General Queries</option>
+                <option value="canada">Experience Issue</option>
+                <option value="usa">Membership</option>
+                <option value="usa">Login Issues</option>
+                <option value="usa">Joining Our Team</option>
+                <option value="usa">Other</option>
+
+            </select>
+
+            <label for="subject">Message</label> <!-- Title of the box  -->
+            <textarea id="subject" name="subject" placeholder="How Can We Help You.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit"> <!-- Submit Button  --> 
+        </form>
+         
+    </div>
+
+    <br>
+        <div class="footer">  <!-- Footer -->
+            <p>Take Care Of Your Health & Wellbeing With Soul Divine.</p>
+        </div>
+
+</body>
+
+</html>
