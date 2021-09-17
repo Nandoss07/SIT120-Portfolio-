@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Todo.css">
+    
+</head>
+
+<body>
+
+    <div id="app">
+        <h2>Todo's For Today :</h2>
+        <ol>
+          <li v-for="todo in todos">
+            <label>
+              <input type="checkbox"
+                v-on:change="toggle(todo)"
+                v-bind:checked="todo.done">
+      
+              <del v-if="todo.done">
+                {{ todo.text }}
+              </del>
+              <span v-else>
+                {{ todo.text }}
+              </span>
+            </label>
+          </li>
+        </ol>
+      </div>
+      
+      <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js%22%3E"></script> 
+      <script src="Todo.js"></script>
+</body>
+</html>
