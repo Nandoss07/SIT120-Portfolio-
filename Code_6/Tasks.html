@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="Tasks.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.4/css/bulma.min.css">
+</head>
+
+<body>
+
+    <h1><i><b>Week 6 Task 2</i></b></h1>
+
+    <h2><i>Checkbox</i></h2>
+
+    <h3> Select Your Prefered Doctor </h3>
+
+    <div id="v-model-multiple-checkboxes" class="demo">
+        <input type="checkbox" id="jack" value="Dr. Mark Hyman" v-model="checkedNames" />
+        <label for="jack"> Dr. Mark Hyman </label>
+        <input type="checkbox" id="john" value="Dr. Andrew Weil" v-model="checkedNames" />
+        <label for="john"> Dr. Andrew Weil </label>
+        <input type="checkbox" id="mike" value="Dr. Robert Grant" v-model="checkedNames" />
+        <label for="mike"> Dr. Robert Grant </label>
+        <br />
+        <span>Checked names: {{ checkedNames }}</span>
+      </div>
+
+
+      <br>
+
+    <h1><i><b>Week 6 Task 3</i></b></h1>
+
+    <h2><i>Dynamic Options Rendering</i></h2>
+
+    <h3> Select Your Prefered Time </h3>
+
+    <div id="v-model-select-dynamic" class="Trial_1">
+        <select v-model="selected">
+          <option v-for="option in options" v-bind:value="option.value">
+            {{ option.text }}
+          </option>
+        </select>
+        <span>Selected: {{ selected }}</span>
+      </div>
+
+
+
+
+
+
+    <script src=" https://unpkg.com/vue@next"></script>
+
+    <script src="Tasks.js"></script>
+
+</body>
+
+</html>
+
+
+
+
